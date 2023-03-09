@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box; margin: 0; padding: 0;}
+        div
+        {
+            height:85px;
+            background: black;
+            
+        }
+        div ul
+        {
+            margin-left: 55px;
+        }
+        div ul li
+        {
+            list-style-type: none;
+            display: inline;
+            margin-right: 65px;
+            line-height: 85px;
+            position: relative;
+        }
+        div ul li a
+        {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+
+        }
+        li::after
+        {
+            content: "";
+            height: 5px;
+            width: 0px;
+            background: wheat;
+            position: absolute;
+            top: 45px;
+            left: -10px;
+            transition: 1s;
+        }
+        /*  */
+        
+        li:hover::after
+        {
+            width: 130%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Men's wear</a></li>
+            <li><a href="">women's wear</a></li>
+            <li><a href="">Short codes</a></li>
+            <li><a href="">Contect</a></li>
+            
+            
+        </ul>
+    </div>
+</body>
+</html>
