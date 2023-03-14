@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .main
+        {
+            height: 900px;
+            width: 1262px;
+            background: white;
+        }
+        .main .partisation-main
+        {
+            height: 795px;
+            background: coral;
+            margin-top: 50PX;
+            position: relative;
+            
+
+        }
+        .partisation-main .left
+        {
+            height: 795px;
+            width: 510px;
+            /* background: turquoise; */
+            background: url(https://augustav.com/images/bb1.jpg);
+            background-size: 120% 120%;
+
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            border: 15px solid rgba(255, 255, 255, 0.30);
+            background-origin: border-box;
+            background-position: -50px 0;
+            transition: 2s;
+
+
+        }
+
+        .left .a1
+        {
+            height: 500px;
+            width: 400px;
+            background: transparent;
+            /* margin: auto; */
+
+            border: 5px solid white;
+            padding: 80px 0 0 200px;
+            font-size: 25px;
+            color: white;
+            font-family: cursive;
+            letter-spacing: 15px;
+            font-size: 1.5em;
+
+
+
+
+            transition: 0.2s;
+            margin-left: -30px;
+            transition: 1s;
+            opacity: 0;
+        }
+        
+        .left:hover .a1
+        {
+            opacity: 1;
+            margin-left: 0;
+        }
+        .left:hover
+        {
+            background-position: 0px 0;
+        }
+        
+
+        
+        .partisation-main .right
+        {
+            height: 795px;
+            width: 752px;
+            background: rgb(31, 32, 32);
+            position: absolute;
+            top: 0;
+            left: 510px;
+            /* margin-left: 510px; */
+            padding-left: 30px;
+ 
+        }
+        .partisation-main .right .right-up
+        {
+            height: 380px;
+            width: 600px;
+            background: wheat;
+        }
+        .partisation-main .right .right-down
+        {
+            height: 380px;
+            width: 600px;
+            background: darkgrey;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <P><B>WHAT'S</B>TRENDINI</P>
+        <div class="partisation-main">
+            <div class="left">
+                <div class="a1">
+                    <p>New Arival</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-up"></div>
+                <div class="right-down"></div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
